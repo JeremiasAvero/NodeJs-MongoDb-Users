@@ -18,7 +18,7 @@ const swaggerSpec = {
     },
     servers: [
     {
-        url: "https://nodejs-mongodb-users-production.up.railway.app/"
+        url: "https://nodejs-mongodb-users-production.up.railway.app"
     }
   ]
   },
