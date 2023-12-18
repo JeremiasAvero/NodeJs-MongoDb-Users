@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 //middlewares
-app.use("/", indexRoutes);
+app.use(indexRoutes);
 app.use("/api", userRoutes);
 app.use("/api-doc", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
 
