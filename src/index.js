@@ -22,7 +22,7 @@ const swaggerSpec = {
     }
   ]
   },
-  apis: [`${path.join(__dirname, "./routes/*.js")}`],
+  apis: [`${path.join(__dirname, "./routes/user.routes.js")}`],
 }
 const app = express();
 const PORT = process.env.PORT || 3000;
