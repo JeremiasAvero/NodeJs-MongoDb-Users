@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/user.routes");
+const indexRoutes = require("./routes/index.routes");
 require("dotenv").config();
 const path = require('node:path')
 
@@ -28,6 +29,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 //middlewares
+app.use("/", indexRoutes);
 app.use("/api", userRoutes);
 app.use("/api-doc", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
 
